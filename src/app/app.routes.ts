@@ -23,7 +23,11 @@ export const ROUTES: Routes = [
     component: HomeComponent,
   },
   {
-    path: ROUTER_TOKENS.SHOP,
+    path: `${ROUTER_TOKENS.SHOP}/:categoryID/:pieID`,
+    component: ProductsViewComponent,
+  },
+  {
+      path: `${ROUTER_TOKENS.SHOP}/:categoryID`,
     component: ProductsViewComponent,
   },
   {
